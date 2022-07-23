@@ -8,7 +8,7 @@ let amount = 0
 
 addEl.addEventListener("click", ()=>{
     amount += parseFloat(amountEl.value)
-    if(amountEl.value && contextEl.value){
+    if(amountEl.value && contextEl.value && checkAmount()){
         updateAmount()
         listEl.innerHTML += `<li class="p">${contextEl.value} --- ${amountEl.value}</li>`
     }
@@ -19,18 +19,27 @@ addEl.addEventListener("click", ()=>{
 
 lessEl.addEventListener("click", ()=>{
     amount -= parseFloat(amountEl.value)
-    if(amountEl.value && contextEl.value){
+    if(amountEl.value && contextEl.value && checkAmount()){
         updateAmount()
         listEl.innerHTML += `<li class="n">${contextEl.value} --- ${amountEl.value}</li>`
     }
     amountEl.value = ""
     contextEl.value = ""  
 })
+
 function updateAmount(){
     result.innerHTML = amount
     if(amount<0){
         result.style.color = "red"
     }else{
         result.style.color = "green"
+    }
+}
+
+function checkAmount(){
+    if(isNaN(amountEl.value)){
+        alert("The amount must be written in numbers only!!")
+    }else{
+        return true
     }
 }
