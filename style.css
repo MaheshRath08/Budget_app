@@ -78,4 +78,18 @@ button:active{
 .n{
     background-color: red;
 }
+@media (max-width:425px) {
+    button{
+        margin: 5px;
+    }
+}
+@media (max-width:362px) {
+    input{
+        margin:15px;
+        text-align: center;
+    }
+    #amount{
+        width: 100px;
+    }
+}
 
