@@ -32,6 +32,10 @@ input::placeholder{
     color: gray;
     opacity: 70%;
 }
+input:focus{
+    box-shadow: 0 0 15px red    ;
+    background-color: rgb(234, 255, 245);
+}
 #amount{
     width: 70px;
 }
@@ -43,6 +47,7 @@ button{
     margin: 0 3rem;
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 }
 button:active{
     transform: scale(0.92);
