@@ -7,8 +7,8 @@ const listEl = document.getElementById("list")
 let amount = 0
 
 addEl.addEventListener("click", ()=>{
-    amount += parseFloat(amountEl.value)
     if(amountEl.value && contextEl.value && checkAmount()){
+        amount += parseFloat(amountEl.value)
         updateAmount()
         listEl.innerHTML += `<li class="p">${contextEl.value} --- ${amountEl.value}</li>`
     }
@@ -18,8 +18,8 @@ addEl.addEventListener("click", ()=>{
 })
 
 lessEl.addEventListener("click", ()=>{
-    amount -= parseFloat(amountEl.value)
     if(amountEl.value && contextEl.value && checkAmount()){
+        amount -= parseFloat(amountEl.value)
         updateAmount()
         listEl.innerHTML += `<li class="n">${contextEl.value} --- ${amountEl.value}</li>`
     }
