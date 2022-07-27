@@ -10,7 +10,7 @@ addEl.addEventListener("click", ()=>{
     if(amountEl.value && contextEl.value && checkAmount()){
         amount += parseFloat(amountEl.value)
         updateAmount()
-        listEl.innerHTML += `<li class="p">${contextEl.value} --- ${amountEl.value}</li>`
+        listEl.innerHTML += `<li class="p"><span class="left">${contextEl.value}</span>  <span class="right">${amountEl.value}</span></li>`
     }
     amountEl.value = ""
     contextEl.value = ""
@@ -21,7 +21,7 @@ lessEl.addEventListener("click", ()=>{
     if(amountEl.value && contextEl.value && checkAmount()){
         amount -= parseFloat(amountEl.value)
         updateAmount()
-        listEl.innerHTML += `<li class="n">${contextEl.value} --- ${amountEl.value}</li>`
+        listEl.innerHTML += `<li class="n"><span class="left">${contextEl.value}</span>  <span class="right">${amountEl.value}</span></li>`
     }
     amountEl.value = ""
     contextEl.value = ""  

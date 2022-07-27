@@ -14,8 +14,8 @@ h1, .input-field, .btn-field, .result, .list{
     margin-top: 2rem;
 }
 h1{
-    color: rgb(255, 255, 81);
-    text-shadow: 0 0 15px palevioletred;
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 15px navy;
     letter-spacing: 2px;
     font-size: 3rem;
     font-family: cursive;
@@ -71,9 +71,12 @@ button:active{
     list-style-type: none;
 }
 .list ul li{
-    padding: 0.7rem;
+    padding: 0.7rem 2rem;
+    width: 50%;
+    height:4vh;
+    margin: 0 auto;
     border: 2px solid cyan;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: cursive;
     letter-spacing: 1px;
 }
@@ -86,6 +89,14 @@ button:active{
 .n{
     background-color: red;
 }
+.right{
+    float: right;
+    font-family: cursive;
+}
+.left{
+    float: left;
+    font-family: cursive;
+}
 @media (max-width:425px) {
     button{
         margin: 5px;
@@ -95,6 +106,10 @@ button:active{
     input{
         margin:15px;
         text-align: center;
+    }
+    .list ul li{
+        width: 100%;
+        margin: 0%;
     }
     #amount{
         width: 100px;
