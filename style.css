@@ -4,9 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    /* background-color: #f5c0f5; */
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    background-color: rgb(2, 2, 77);
+    /* background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%); */
     height: 100vh;
 }
 h1, .input-field, .btn-field, .result, .list{
@@ -82,6 +82,7 @@ button:active{
 }
 .result{
     font-size: 3rem;
+    color: white;
 }
 .p{
     background-color: green;
