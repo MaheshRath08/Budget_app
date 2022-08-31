@@ -98,6 +98,9 @@ button:active{
     float: left;
     font-family: cursive;
 }
+
+/* CSS to make it responsive */
+
 @media (max-width:425px) {
     button{
         margin: 5px;
